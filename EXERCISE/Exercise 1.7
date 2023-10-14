@@ -1,0 +1,15 @@
+#include <iostream>
+
+/*
+1.7. Задача 2.12.[1] Да се напише програма, която проверява дали дадена
+година е високосна.
+*/
+
+int main() {
+
+	int year;
+	std::cin >> year;
+
+	bool isLeapYear = (year % 4 == 0) && (year % 100 != 0 || year % 400 == 0);
+	std::cout << std::boolalpha << isLeapYear << std::endl;
+}
