@@ -4,8 +4,8 @@
 #include <climits>
 
 /*
-3.6. Task 3.15. [1] Write a program that enters the real vectors a0, a1, ..., an−1 and b0, b1, ..., bn−1 (1 ≤ n ≤ 100), finds their scalar
-artwork and brings it to the screen.
+3.7. Task 3.10. [1] To write a program that, for a given numerical sequence a0, a1, ..., an−1 (1 ≤ n ≤ 100), finds the length of the longest ´u
+nondecreasing sequence ai, ai+1, ..., ai+k (ai ≤ ai+1 ≤ ... ≤ ai+k).
 */
 
 
