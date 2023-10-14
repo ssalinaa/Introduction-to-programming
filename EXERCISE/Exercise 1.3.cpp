@@ -1,8 +1,8 @@
 #include <iostream>
 
 /*
-Задача 1.6.[1] Да се напише програма, която по зададени навършени
-години намира приблизително броя на дните, часовете, минутите и секундите, които е живял човек до навършване на зададените години
+Task 1.6.[1] To write a program that according to set completed
+years finds the approximate number of days, hours, minutes and seconds that a person lived until reaching the specified years.
 */
 
 int main() {
