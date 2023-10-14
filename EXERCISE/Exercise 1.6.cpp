@@ -1,0 +1,151 @@
+#include <iostream>
+
+/*
+Задача 1.14.[1] Да се запише булев израз, който да има стойност истина,
+ако посоченото условие е вярно и стойност - лъжа, в противен случай:
+*/
+
+int main() {
+
+	// а) цялото число p се дели на 4 или на 7;
+
+	int p;
+	std::cin >> p;
+	bool condition_a = (p % 4 == 0) || (p % 7 == 0);
+	std::cout << std::boolalpha << condition_a << std::endl;
+
+	// б) уравнението ax2 + bx + c = 0(a 6= 0) няма реални корени;
+
+	int a, b, c;
+	std::cin >> a >> b >> c;
+	bool condition_b = (b * b - 4 * a * c) < 0;
+	std::cout << std::boolalpha << condition_b << std::endl;
+
+	
+	// в.1) точка с координати (a, b) лежи във вътрешността на кръг с радиус 5 и център (0, 1);
+
+	int a, b;
+	std::cin >> a >> b;
+	bool condition_c1 = (a * a + (b - 1) * (b - 1)) < 5 * 5;
+	std::cout << std::boolalpha << condition_c1 << std::endl;
+
+	// в.2) точка с координати (a, b) лежи извън кръга с център (c, d) и радиус f;
+
+	int a, b;
+	std::cin >> a >> b;
+	int c, d, f;
+	std::cin >> c >> d >> f;
+	bool condition_c2 = ((a - c) * (a - c) + (b - d) * (b - d)) > f * f;
+	std::cout << std::boolalpha << condition_c2 << std::endl;
+
+	// г) точка принадлежи на частта от кръга с център (0, 0) и радиус 5 в трети квадрант;
+
+	int a, b;
+	std::cin >> a >> b;
+	bool condition_d = (a >= 0) && (b <= 0) && (a * a + b * b <= 5 * 5);
+	std::cout << std::boolalpha << condition_d << std::endl;
+
+	// д) точка принадлежи на венеца с център (0, 0) и радиуси 5 и 10;
+
+	int a, b;
+	std::cin >> a >> b;
+	bool condition_f = (a * a + b * b >= 5 * 5) && (a * a + b * b <= 10 * 10);
+	std::cout << std::boolalpha << condition_f << std::endl;
+
+	// e) x принадлежи на отсечката [0, 1]:
+
+	int x;
+	std::cin >> x;
+	bool condition_g = (x >= 0) && (x <= 1);
+	std::cout << std::boolalpha << condition_g << std::endl;
+
+	// ж) x е равно на max {a, b, c};
+
+	int x, a, b, c;
+	std::cin >> x >> a >> b >> c;
+	bool condition_h = (x == a);
+	if (b > condition_h) {
+		condition_h = (x == b);
+	}
+	if (c > condition_h) {
+		condition_h = (x == c);
+	}
+	std::cout << std::boolalpha << condition_h << std::endl;
+
+	//bool condition = (x == std::max({a, b, c}));
+
+	// и) поне една от булевите променливи x и y има стойност true;
+
+	bool x, y;
+	std::cin >> x >> y;
+
+	bool condition = (x == true || y == true);
+	std::cout << std::boolalpha << condition << std::endl;
+
+	// к) и двете булеви променливи x и y имат стойност true;
+
+	bool x, y;
+	std::cin >> x >> y;
+
+	bool condition = (x == true && y == true);
+	std::cout << std::boolalpha << condition << std::endl;
+	
+	// л) нито едно от числата a, b и c не е положително;
+
+	int a, b, c;
+	std::cin >> a >> b >> c;
+
+	bool negative = (a <= 0 && b <= 0 && c <= 0);
+	std::cout << std::boolalpha << negative << std::endl;
+
+	// м) цифрата 7 влиза в записа на положителното трицифрено число p;
+
+	int p;
+	std::cin >> p;
+
+	bool condition = (p >= 100 && p <= 999 && (p % 10 == 7 || (p / 10) % 10 == 7 || (p / 100) == 7));
+	std::cout << std::boolalpha << condition << std::endl;
+
+	// н) цифрите на трицифреното число m са различни;
+
+	int m;
+	std::cin >> m;
+	bool condition = (m >= 100 && m <= 999 && (m / 100 != (m / 10) % 10) && (m / 100 != m % 10) && ((m / 10) % 10 != m % 10));
+	std::cout << std::boolalpha << condition << std::endl;
+	
+	// о) поне две от цифрите на трицифреното число m са равни помежду си;
+
+	int m;
+	std::cin >> m;
+	bool condition = (m >= 100 && m <= 999) &&
+		((m / 100 == (m / 10) % 10) || (m / 100 == m % 10) || ((m / 10) % 10 == m % 10));
+	std::cout << std::boolalpha << condition << std::endl;
+
+	// п) цифрите на трицифреното естествено число x образуват строго растяща или строго намаляваща редица;
+
+	int x;
+	std::cin >> x;
+
+	bool isIncreasing = (x / 100 % 10 < x / 10 % 10 && x / 10 % 10 < x % 10);
+	bool isDecreasing = (x / 100 % 10 > x / 10 % 10 && x / 10 % 10 > x % 10);
+
+	bool condition = isIncreasing || isDecreasing;
+	std::cout << std::boolalpha << condition << std::endl;
+
+	// р) десетичните записи на трицифрените естествени числа x и y са симетрични;
+
+	int x, y;
+	std::cin >> x >> y;
+
+	bool isSymmetric = (x / 100 == y % 10) && ((x / 10) % 10 == (y / 10) % 10) && (x % 10 == y / 100);
+	bool condition = (x >= 100 && x <= 999) && (y >= 100 && y <= 999) && isSymmetric;
+	std::cout << std::boolalpha << condition << std::endl;
+
+	// с) естественото число x, за което се знае, че е по-малко от 23, е просто.
+
+	int x;
+	std::cin >> x;
+	bool condition = (x < 2) || (x == 2) || (x == 3) || ((x % 2 != 0) && (x % 3 != 0) && (x % 5 != 0) && (x % 7 != 0) && (x % 11 != 0) && (x % 13 != 0) && (x % 17 != 0) && (x % 19 != 0) && (x % 23 != 0));
+	std::cout << std::boolalpha << condition << std::endl;
+
+}
