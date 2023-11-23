@@ -2,7 +2,7 @@
 
 int main() {
 
-	// Çàäà÷à 1
+	// Ð—Ð°Ð´Ð°Ñ‡Ð° 1
 
 	int numbers[5] = { 1, 2, 3, 4, 5};
 	for (size_t j = 0; j < 5; j++)
@@ -10,7 +10,7 @@ int main() {
 		std::cout << numbers[j] << " ";
 	}
 
-	// Çàäà÷à 2
+	// Ð—Ð°Ð´Ð°Ñ‡Ð° 2
 
 	int nums[10];
 	int sum = 0;
@@ -21,7 +21,7 @@ int main() {
 	}
 	std::cout << sum << std::endl;
 
-	// Çàäà÷à 3
+	// Ð—Ð°Ð´Ð°Ñ‡Ð° 3
 
 	int n;
 	std::cin >> n;
@@ -35,7 +35,7 @@ int main() {
 
 	std::cout << average / n << std::endl;
 
-	// Çàäà÷à 4
+	// Ð—Ð°Ð´Ð°Ñ‡Ð° 4
 
 	int arr2[1024];
 	int m;
@@ -65,7 +65,7 @@ int main() {
 	std::cout << "Min value: " << min << std::endl;
 	std::cout << "Max value: " << max << std::endl;*/
 
-	// Çàäà÷à 5
+	// Ð—Ð°Ð´Ð°Ñ‡Ð° 5
 
 	int arr3[1024];
 	int size1;
@@ -85,7 +85,7 @@ int main() {
 		std::cout << arr3[i] << " ";
 	}
 
-	// Çàäà÷à 6
+	// Ð—Ð°Ð´Ð°Ñ‡Ð° 6
 
 	int arr4[1024];
 	int size2;
@@ -105,7 +105,7 @@ int main() {
 	}
 	std::cout << "Count: " << count << std::endl;
 
-	// Çàäà÷à 7
+	// Ð—Ð°Ð´Ð°Ñ‡Ð° 7
 
 	int arr5[1024];
 	int arr6[1024];
@@ -142,7 +142,7 @@ int main() {
 		std::cout << "The arrays are not equal." << std::endl;
 	}
 
-	// Çàäà÷à 8
+	// Ð—Ð°Ð´Ð°Ñ‡Ð° 8
 
 	int arr7[1024];
 	int size4;
@@ -164,7 +164,7 @@ int main() {
 		}
 	}
 
-	// Çàäà÷à 9
+	// Ð—Ð°Ð´Ð°Ñ‡Ð° 9
 
 	int arr8[1024];
 	int size5;
@@ -184,7 +184,7 @@ int main() {
 
 	std::cout << result << std::endl;
 
-	// Çàäà÷à 10
+	// Ð—Ð°Ð´Ð°Ñ‡Ð° 10
 
 	int arr9[1024];
 	int size6;
@@ -205,7 +205,7 @@ int main() {
 		std::cout << arr9[i] << " ";
 	}
 
-	// Çàäà÷à 11
+	// Ð—Ð°Ð´Ð°Ñ‡Ð° 11
 
 	int arr10[1024];
 	int size7;
@@ -227,7 +227,7 @@ int main() {
 		std::cout << arr10[i] << " ";
 	}
 
-	// Çàäà÷à 12
+	// Ð—Ð°Ð´Ð°Ñ‡Ð° 12
 	
 	int arr11[1024];
 	int size8;
@@ -252,7 +252,7 @@ int main() {
 
 	std::cout << count;
 
-	// Çàäà÷à 13
+	// Ð—Ð°Ð´Ð°Ñ‡Ð° 13
 
 	int arr12[1024];
 	int size9;
@@ -281,7 +281,7 @@ int main() {
 		std::cout << arr12[i] << " ";
 	}
 
-	// Çàäà÷à 14
+	// Ð—Ð°Ð´Ð°Ñ‡Ð° 14
 
 	int arr13[1024];
 	int size10;
@@ -305,7 +305,7 @@ int main() {
 		std::cout << arr13[i] << " ";
 	}
 
-	// Çàäà÷à 15
+	// Ð—Ð°Ð´Ð°Ñ‡Ð° 15
 
 	int arr14[1024];
 	int arr15[1024];
